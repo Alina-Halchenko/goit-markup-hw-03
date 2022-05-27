@@ -8,8 +8,30 @@ body {
   color: var(--primary-text-color);
   font-family: 'Roboto', sans-serif;
 }
+.container {
+  width: 1200px;
+  align-items: center;
+  outline: 1px solid red;
+  margin-left: auto;
+  margin-right: auto;
+  /*Создан общий вспомогательный класс 
+  .container для центрирования и ограничения контента по ширине. 
+  Ширина «контейнера» соответствует макету и равна 1200px.
+  «Контейнер» оборачивает контент хедера,
+    футера и секций. То есть находится внутри них.*/
+ }
+
+.section { 
+  padding-top: 94px; 
+  padding-bottom: 94px;
+}
+
 header {
-  background-color: #FFFFFF;
+  background-color: #2196F3;
+}
+.header-items {
+  display: flex;
+  justify-content: space-around;
 }
 .logo {
   color: var(--accent-color);
@@ -27,6 +49,15 @@ header {
 }
 .navlist {
   list-style-type: none;
+  display: flex;
+  margin-right: auto;
+}
+.navlist > li {
+  outline: 1px solid red;
+}
+
+.sitenav + .sitenav {
+  margin-left: 50px;
 }
 .sitenavlink {
   color: var(--primary-text-color);
@@ -39,6 +70,10 @@ header {
 .sitenavlink:hover,
 .sitenavlink:focus {
   color: var(--accent-color);
+}
+.contacts-wrapper {
+  display: flex;
+  margin-left: auto;
 }
 .contacts {
   color: var(--secondary-text-color);
@@ -54,12 +89,19 @@ header {
 .contacts-footer:focus {
   color: var(--accent-color);
 }
+
+.contacts + .contacts {
+  margin-left: 50px;
+}
 button {
   cursor: pointer;
 }
+
 /* Page index */ 
 .hero {
   background-color: #2F303A;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   color: #FFFFFF;
@@ -69,6 +111,10 @@ button {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-bottom: 30px;
+  width: 696px;
+  margin-top: 0;
+
 }
 .hero-button {
   color: #FFFFFF;
