@@ -114,6 +114,8 @@ button {
   margin-bottom: 30px;
   width: 696px;
   margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
 
 }
 .hero-button {
@@ -124,6 +126,10 @@ button {
   line-height: 1.87;
   text-align: center;
   letter-spacing: 0.06em;
+
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 .list-gen-setting {
   list-style-type: none;
