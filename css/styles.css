@@ -11,7 +11,6 @@ body {
 .container {
   width: 1200px;
   align-items: center;
-  outline: 1px solid red;
   margin-left: auto;
   margin-right: auto;
   /*Создан общий вспомогательный класс 
@@ -27,11 +26,12 @@ body {
 }
 
 header {
-  background-color: #2196F3;
+  background-color: #ffffff;
 }
 .header-items {
   display: flex;
   justify-content: space-around;
+  padding: 25px 15px;
 }
 .logo {
   color: var(--accent-color);
@@ -51,9 +51,8 @@ header {
   list-style-type: none;
   display: flex;
   margin-right: auto;
-}
-.navlist > li {
-  outline: 1px solid red;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .sitenav + .sitenav {
@@ -111,12 +110,12 @@ button {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  
   width: 696px;
   margin-top: 0;
   margin-right: auto;
   margin-left: auto;
-
+  margin-bottom: 30px;
 }
 .hero-button {
   color: #FFFFFF;
@@ -126,15 +125,40 @@ button {
   line-height: 1.87;
   text-align: center;
   letter-spacing: 0.06em;
+  background-color: var(--accent-color);
 
   display: block;
   margin-right: auto;
   margin-left: auto;
-}
-.list-gen-setting {
-  list-style-type: none;
+  padding: 10px 32px;
 }
 
+.list-gen-setting {
+  list-style-type: none;
+
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  margin: 0;
+  }
+
+.visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+.benefits-item {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 270px;
+}
+.benefits-item + .benefits-item {
+  margin-left: 30px;
+}
 .benefits-title {
   color: var(--primary-text-color);
   font-weight: 700;
@@ -153,7 +177,25 @@ button {
 
 .what-we-do-section {
   background-color: #FFFFFF;
+  padding-top: 0;
+  margin-top: 0;
 }
+.what-we-do-image {
+  display: block;
+  width: 370px;
+}
+.what-we-do-list {
+  padding-left: 0;
+  padding-right: 0;
+}
+.what-we-do-list > li {
+  margin-left: auto;
+  margin-right: auto;
+}
+.what-we-do-list > li + li {
+  margin-left: 30px;
+}
+
 .what-we-do-title,
 .our-team-title {
   color: var(--primary-text-color);
@@ -162,9 +204,21 @@ button {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50px;
+}
+
+.our-team-list {
+  justify-content: center;
 }
 .our-team {
   background-color: #F5F4FA;
+}
+.our-team-item + .our-team-item {
+  margin-left: 30px;
 }
 .our-team-names {
   color: var(--primary-text-color);
@@ -183,6 +237,10 @@ button {
 }
 
 /*Page portfolio */
+.our-works-list {
+  justify-content: center;
+  margin-bottom: 50px;
+}
 .our-works-filter {
   color: var(--primary-text-color);
   font-family: 'Roboto', sans-serif;
@@ -190,13 +248,28 @@ button {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+
+  padding-left: 22px;
+  padding-right: 22px;
 }
 .our-works-filter:hover,
 .our-works-filter:focus {
   color: #FFFFFF;
   background-color: var(--accent-color);
 }
-
+.our-works-item + .our-works-item {
+  margin-left: 8px;
+}
+.work-examples-list {
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.work-examples-list > li {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
 .work-examples-name {
   color: var(--primary-text-color);
   font-weight: 700;
@@ -214,12 +287,17 @@ button {
 footer {
   background-color: #2F303A;
 }
+.footer-box {
+  padding: 60px 15px;
+}
 .address-footer {
   color: #FFFFFF;
   font-size: 14px;
   font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  margin-top: 20px;
 }
 .contacts-footer {
   color: rgba(255, 255, 255, 0.6);
@@ -227,5 +305,6 @@ footer {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
+  display: block;
 }
 /*hover and focus are withing the header contact settings */

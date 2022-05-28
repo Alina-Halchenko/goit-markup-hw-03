@@ -15,32 +15,37 @@
 <!--main conntent-->
 <body>
   <header>
-    <a class="logo" href="./index.html">Web<span class="logostudiotop">Studio</span></a>
-    <!--Site navigation-->
-    <nav>
-      <ul class="navlist">
-        <li class="sitenav"><a class="sitenavlink" href="./index.html">Студия</a></li>
-        <li class="sitenav"><a class="sitenavlink" href="./portfolio.html">Портфолио</a></li>
-        <li class="sitenav"><a class="sitenavlink" href="">Контакты</a></li>
-      </ul>
-    </nav>
-    <!--Phone and email-->
-    <div>
-      <a class="contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
-      <a class="contacts" href="tel:+380961111111">+38 096 111 11 11</a>
+    <div class="container header-items">
+      <a class="logo" href="./index.html">Web<span class="logostudiotop">Studio</span></a>
+      <!--Site navigation-->
+      <nav>
+        <ul class="navlist">
+          <li class="sitenav"><a class="sitenavlink" href="./index.html">Студия</a></li>
+          <li class="sitenav"><a class="sitenavlink" href="./portfolio.html">Портфолио</a></li>
+          <li class="sitenav"><a class="sitenavlink" href="">Контакты</a></li>
+        </ul>
+      </nav>
+      <!--Phone and email-->
+      <div class="contacts-wrapper">
+        <a class="contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <a class="contacts" href="tel:+380961111111">+38 096 111 11 11</a>
+      </div>
     </div>
   </header>
   <main>
     <section class="section">
-      <h1>Наши работы</h1>
-      <ul class="list-gen-setting">
-        <li><button class="our-works-filter" type="button">Все</button></li>
-        <li><button class="our-works-filter" type="button">Веб-сайты</button></li>
-        <li><button class="our-works-filter" type="button">Приложения</button></li>
-        <li><button class="our-works-filter" type="button">Дизайн</button></li>
-        <li><button class="our-works-filter" type="button">Маркетинг</button></li>
-      </ul>
-      <ul class="list-gen-setting">
+      <h1 class="visually-hidden">Наши работы</h1>
+      <div class="container">
+        <ul class="list-gen-setting our-works-list">
+          <li class="our-works-item"><button class="our-works-filter" type="button">Все</button></li>
+          <li class="our-works-item"><button class="our-works-filter" type="button">Веб-сайты</button></li>
+          <li class="our-works-item"><button class="our-works-filter" type="button">Приложения</button></li>
+          <li class="our-works-item"><button class="our-works-filter" type="button">Дизайн</button></li>
+          <li class="our-works-item"><button class="our-works-filter" type="button">Маркетинг</button></li>
+        </ul>
+      </div>
+      <div class="container">
+      <ul class="list-gen-setting work-examples-list">
         <li>
           <a href=""><img src="./images/technokryak.jpg" alt="профайлы людей на экране" width="370"></a>
           <h2 class="work-examples-name">Технокряк</h2>
@@ -87,16 +92,17 @@
           <p class="work-examples-type">Приложение</p>
         </li>
       </ul>
+      </div>
     </section>
   </main>
-    <footer>
-      <div>
-        <a class="logo" href="./index.html">Web<span class="logostudiobottom">Studio</span></a>
-        <address class="address-footer">
-          г. Киев, пр-т Леси Украинки, 26
-        </address>
-        <a class="contacts-footer" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <a class="contacts-footer" href="tel:+380961111111">+38 096 111 11 11</a>
-      </div>
-    </footer>
+  <footer>
+    <div class="container footer-box">
+      <a class="logo" href="./index.html">Web<span class="logostudiobottom">Studio</span></a>
+      <address class="address-footer">
+        г. Киев, пр-т Леси Украинки, 26
+      </address>
+      <a class="contacts-footer" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      <a class="contacts-footer" href="tel:+380961111111">+38 096 111 11 11</a>
+    </div>
+  </footer>
 </body>
