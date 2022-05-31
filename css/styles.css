@@ -6,8 +6,10 @@
 h1,
 h2,
 h3,
-p {
+p,
+ul {
   margin: 0;
+  padding: 0;
 }
 body {
   color: var(--primary-text-color);
@@ -277,8 +279,12 @@ button {
   margin-left: 30px;
   margin-top: 30px;
 }
+.work-examples-list li > a > img {
+  display: block;
+}
 .work-examples-box {
-  padding: 20px 24px 54px 24px;
+  border: 1px solid rgba(238, 238, 238, 1);
+  padding: 20px 24px;
 }
 .work-examples-name {
   color: var(--primary-text-color);
